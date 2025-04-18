@@ -51,8 +51,26 @@
     transform: scale(1.1);
   }
   
-     /* Hero Section */
-.hero-section {
+  /* Hamburger Icon for Mobile */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
     background: #e0f7f3;
     height: 100vh;
     display: flex;
@@ -214,16 +232,39 @@
   
   /* Responsive */
   @media (max-width: 768px) {
-    .hero-content h2 {
-      font-size: 2.5rem;
+    .hamburger {
+      display: flex;  /* Make sure it's displayed on small screens */
     }
   
     .nav-links {
-      display: none;
+      display: none;  /* Hide navigation links by default on mobile */
+      width: 100%;
+      text-align: center;
+      background-color: #004e92;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      padding: 1rem 0;
     }
   
-    .features {
-      grid-template-columns: 1fr;
+    .nav-links.active {
+      display: block;  /* Show navigation links when active */
+    }
+  
+    .nav-links a {
+      display: block;
+      margin: 1rem 0;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  
+    .nav-links a:hover {
+      color: #00ffcc;
+    }
+  
+    .hero-content h2 {
+      font-size: 2.5rem;
     }
   
     .hero-image {
