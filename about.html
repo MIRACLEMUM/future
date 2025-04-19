@@ -1,64 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | MiraFoam</title>
-  <link rel="stylesheet" href="about.css" />
-  <!-- Add Google Fonts if not already included -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
-  <!-- Optional Icons -->
-  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiraFoam - About</title>
+  <link rel="stylesheet" href="about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <!-- Header -->
   <header class="header">
     <div class="logo">
       <h1>MiraFoam</h1>
     </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="shop.html">Shop</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+    
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
       <div></div>
       <div></div>
       <div></div>
     </div>
+  
+    <!-- Navigation Links -->
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="product.html">Products</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
-
+  
   <!-- About Section -->
-  <section class="about-section" id="about">
+  <section class="about-section">
     <div class="about-content">
-      <div class="about-text">
-        <h2>About MiraFoam</h2>
-        <p>
-          At MiraFoam, we’re committed to bringing sparkle and cleanliness to your home the eco-friendly way. Our liquid detergent is not only powerful against stains but also gentle on the planet. We believe in sustainable cleaning solutions that care for your clothes, your skin, and the Earth.
-        </p>
-        <p>
-          Our mission is simple: <strong>clean smarter, live better</strong>. We source biodegradable ingredients, use recyclable packaging, and support a cleaner, greener future.
-        </p>
-        <a href="shop.html" class="btn">Explore Products</a>
+      <h2>Our Story</h2>
+      <p>At MiraFoam, we believe in providing eco-friendly, powerful, and gentle cleaning solutions for your home and clothes. Our liquid detergent is made with natural ingredients, ensuring it is safe for you, your family, and the planet.</p>
+    </div>
+  </section>
+  
+  <!-- Team Section -->
+  <section class="team-section">
+    <h2>Meet The Team</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="images/WhatsApp Image 2025-04-19 at 15.12.49_64bb7c5d.jpg" alt="Team Member 1" class="team-img">
+        <h3>Miracle sunday</h3>
+        <p>CEO & Founder</p>
       </div>
-      <div class="about-image">
-        <img src="images/about-liquid-soap.jpg" alt="About MiraFoam">
+      <div class="team-member">
+        <img src="images/etidara.jpg" alt="Team Member 2" class="team-img">
+        <h3>Etidara Ekere</h3>
+        <p>Chief Marketing Officer</p>
+      </div>
+      <div class="team-member">
+        <img src="images/WhatsApp Image 2025-04-19 at 15.14.53_a57438c3.jpg" alt="Team Member 3" class="team-img">
+        <h3>Miracle sunday</h3>
+        <p>Head of Production</p>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 MiraFoam. All rights reserved.</p>
-    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-whatsapp"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-tiktok"></i></a>
+  <!-- Video Intro Section -->
+  <section class="video-section">
+    <h2>Watch Our Journey</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bRQBgDgyBnE" frameborder="0" allowfullscreen></iframe>
+
     </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <p>Follow us on social media</p>
+    <div class="social-icons">
+     <a href="https://www.facebook.com/share/1UxYsW74Xj/"><i class="fab fa-facebook-f"></i></a>
+     <a href="https://www.tiktok.com/@miraclesunday456?_t=ZM-8vfLbtYrkCE&_r=1"><i class="fab fa-tiktok"></i></a>
+     <a href="https://wa.me/2347064400428"><i class="fab fa-whatsapp"></i></a>
+      
+    </div>
+    <p>&copy; 2025 MiraFoam. All rights reserved.</p>
   </footer>
 
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

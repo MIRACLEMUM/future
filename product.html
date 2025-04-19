@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MiraFoam - Product Page</title>
+  <link rel="stylesheet" href="product.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+          <h1>Your Logo</h1>
+        </div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="product.html">Products</a>
+          <a href="#">Contact</a>
+          <a href="about.html">About</a>
+        </nav>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+      
+
+  <!-- Product Detail Section -->
+  <section class="product-detail">
+    <div class="product-container">
+      <!-- Product Image -->
+      <div class="product-image">
+        <img src="images/liquid soap.png" alt="MiraFoam Liquid Soap" class="product-img">
+      </div>
+      
+      <!-- Product Info -->
+      <div class="product-info">
+        <h2 class="product-name">MiraFoam Liquid Soap</h2>
+        <p class="product-price">$15.99</p>
+        <p class="product-description">
+          MiraFoam Liquid Soap is eco-friendly, effective, and gentle on your skin. Perfect for all laundry and cleaning needs.
+        </p>
+        
+        <!-- Product Variations -->
+        <label for="size">Choose Size:</label>
+        <select id="size" name="size">
+          <option value="small">Small - $10</option>
+          <option value="medium">Medium - $15</option>
+          <option value="large">Large - $20</option>
+        </select>
+        
+        <!-- Quantity Selector -->
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Reviews Section -->
+  <section class="product-reviews">
+    <h3>Customer Reviews</h3>
+    <div class="reviews-grid">
+      <div class="review">
+        <p><strong>Jane Doe</strong> - ⭐⭐⭐⭐</p>
+        <p>"Love this soap! It smells amazing and leaves my skin soft."</p>
+      </div>
+      <div class="review">
+        <p><strong>John Smith</strong> - ⭐⭐⭐⭐⭐</p>
+        <p>"Great value for the price. I use it daily, and it's amazing!"</p>
+      </div>
+      <div class="review">
+        <p><strong>Emma Williams</strong> - ⭐⭐⭐⭐⭐</p>
+        <p>"I love the eco-friendly formula. It's gentle on my skin and perfect for sensitive skin types."</p>
+      </div>
+      <div class="review">
+        <p><strong>David Brown</strong> - ⭐⭐⭐⭐</p>
+        <p>"The fragrance is lovely, and it cleans really well. Highly recommend it!"</p>
+      </div>
+      <div class="review">
+        <p><strong>Alice White</strong> - ⭐⭐⭐⭐⭐</p>
+        <p>"This is now my go-to soap. It leaves my clothes fresh and soft!"</p>
+      </div>
+      <div class="review">
+        <p><strong>Michael Lee</strong> - ⭐⭐⭐⭐⭐</p>
+        <p>"Fantastic product. I use it for everything, and it works great every time!"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products Section -->
+  <section class="related-products">
+    <h3>Related Products</h3>
+    <div class="related-product-card">
+      <img src="images/related-product1.jpg" alt="Related Soap Product" class="related-product-img">
+      <p>Fresh Citrus Soap</p>
+      <p>$12.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+    <div class="related-product-card">
+      <img src="images/related-product2.jpg" alt="Related Soap Product" class="related-product-img">
+      <p>Lavender Bliss Soap</p>
+      <p>$13.99</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </section>
+
+  <!-- Social Share Section -->
+  <section class="social-share">
+    <h3>Share This Product</h3>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=url" target="_blank" class="social-button facebook">Share on Facebook</a>
+    <a href="https://twitter.com/intent/tweet?url=url" target="_blank" class="social-button twitter">Share on Twitter</a>
+    <a href="https://www.instagram.com" target="_blank" class="social-button instagram">Share on Instagram</a>
+  </section>
+
+  <!-- Shipping Information -->
+  <section class="shipping-info">
+    <p>Free shipping on orders over $50. Estimated delivery: 3-5 business days.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 MiraFoam. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
