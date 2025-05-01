@@ -15,7 +15,7 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(90deg, #1c1c1c, #004e92);
+    background: linear-gradient(90deg, #006400, #008000); /* Matching index page header color */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -69,33 +69,33 @@ body {
 
 /* About Section */
 .about-section {
-    background: #e0f7f3;
+    background: #e0f7e9; /* Light green background matching index page */
     padding: 4rem 2rem;
     text-align: center;
 }
 
 .about-content h2 {
     font-size: 3rem;
-    color: #004d40;
+    color: #004d40; /* Dark green text */
     margin-bottom: 1rem;
 }
 
 .about-content p {
     font-size: 1.5rem;
-    color: #555;
+    color: #555; /* Light gray text */
     margin-bottom: 2rem;
 }
 
 /* Team Section */
 .team-section {
-    background: #f2fdfc;
+    background: #f2fdfc; /* Soft light color matching the index page */
     padding: 4rem 2rem;
     text-align: center;
 }
 
 .team-section h2 {
     font-size: 3rem;
-    color: #004d40;
+    color: #004d40; /* Dark green */
     margin-bottom: 2rem;
 }
 
@@ -140,7 +140,7 @@ body {
 /* Video Section */
 .video-section {
     padding: 4rem 2rem;
-    background: #e1f5fe;
+    background: #e1f5fe; /* Light blue matching index page video section */
     text-align: center;
 }
 
@@ -152,7 +152,7 @@ body {
 
 /* Footer */
 .footer {
-    background: #002244;
+    background: #004d40; /* Matching dark footer color */
     color: white;
     text-align: center;
     padding: 2rem 1rem;
@@ -176,12 +176,11 @@ body {
         display: flex;  /* Make sure it's displayed on small screens */
     }
     
-
     .nav-links {
         display: none;  /* Hide navigation links by default on mobile */
         width: 100%;
         text-align: center;
-        background-color: #004e92;
+        background-color: #008000; /* Matching header color */
         position: absolute;
         top: 80px;
         left: 0;
